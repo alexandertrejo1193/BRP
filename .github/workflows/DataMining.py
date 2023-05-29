@@ -1,4 +1,6 @@
 import requests
+from lxml import html
+from lxml import etree
 from bs4 import BeautifulSoup
 import pandas as pd
 from geopy.geocoders import Nominatim
