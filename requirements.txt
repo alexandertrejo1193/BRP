@@ -1,0 +1,7 @@
+requests
+BeautifulSoup
+html
+etree
+pandas
+Nominatim
+numpy
