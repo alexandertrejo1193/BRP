@@ -1,7 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-from lxml import html
-from lxml import etree
 import pandas as pd
 from geopy.geocoders import Nominatim
 import numpy as np
