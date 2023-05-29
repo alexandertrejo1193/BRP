@@ -1,6 +1,5 @@
 requests
 beautifulsoup4
-etree
 pandas
 Nominatim
 numpy
