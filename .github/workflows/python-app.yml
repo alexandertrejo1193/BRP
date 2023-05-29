@@ -4,7 +4,6 @@
 name: Data mining
 
 on:
-  # Triggers the workflow every 5 minutes
   schedule:
     - cron: "0 0 * * 0"
 
