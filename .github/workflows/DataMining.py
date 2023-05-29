@@ -67,9 +67,18 @@ for url in listaurl:
     }
     response = requests.get(url, headers=headers)
     soup=BeautifulSoup(response.text)
-    lista_titulo[ind]=soup.find('div',attrs={'class':'main-title'}).text
-    lista_precio[ind]=soup.find('div',attrs={'class':'prices-and-fees__price'}).text
-    lista_ubi[ind]=soup.find('div',attrs={'class':'view-map__text'}).text
+    try:
+        lista_titulo[ind]=soup.find('div',attrs={'class':'main-title'}).text
+    except:
+        a=1
+    try:
+        lista_precio[ind]=soup.find('div',attrs={'class':'prices-and-fees__price'}).text
+    except:
+        a=1
+    try:
+        lista_ubi[ind]=soup.find('div',attrs={'class':'view-map__text'}).text
+    except:
+        a=1
     try:
         lista_atributos[ind]=soup.find_all('div',attrs={'class':'details-item-value'})
     except:
